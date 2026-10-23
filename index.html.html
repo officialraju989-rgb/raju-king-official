@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10101b">
+  <meta name="description" content="The official personal portfolio of Raju King Official — A Dreamer | A Creator | A King. Content Creator & Film Director from Thakurgaon, Bangladesh.">
+  <title>Raju King Official | Personal Portfolio</title>
+  <style>
+    :root{--bg:#0b0b12;--panel:#141421;--panel2:#1a1a2a;--text:#f5f4fb;--muted:#b4b2c5;--purple:#a78bfa;--pink:#f472b6;--line:rgba(255,255,255,.11);--gold:#f6d78b}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,rgba(167,139,250,.15),transparent 35%),radial-gradient(ellipse at 0% 40%,rgba(244,114,182,.08),transparent 30%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0;gap:20px}.brand{font-weight:850;letter-spacing:.4px}.brand span{color:var(--purple)}.navlinks{display:flex;align-items:center;gap:24px;color:var(--muted);font-size:.92rem}.navlinks a:hover{color:white}.lang{border:1px solid var(--line);border-radius:999px;padding:8px 13px;background:#ffffff08;color:white;cursor:pointer;font-weight:700}
+    .hero{min-height:76vh;display:grid;grid-template-columns:1.25fr .75fr;align-items:center;gap:40px;padding:65px 0 85px}.eyebrow{color:var(--gold);font-size:.8rem;font-weight:800;letter-spacing:2.3px;text-transform:uppercase}.hero h1{font-size:clamp(2.8rem,7vw,5.6rem);line-height:1.02;letter-spacing:-3px;margin:18px 0}.gradient{background:linear-gradient(100deg,var(--purple),var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent}.tagline{font-size:clamp(1.1rem,2vw,1.45rem);font-weight:700;color:#ded8f7}.intro{max-width:620px;color:var(--muted);font-size:1.05rem;margin:20px 0 28px}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;border-radius:12px;font-weight:800;border:1px solid var(--line);transition:.2s}.btn.primary{background:linear-gradient(110deg,#8b5cf6,#db5aa8);border:0;color:white;box-shadow:0 12px 35px #a855f733}.btn:hover{transform:translateY(-2px)}.portrait{position:relative;min-height:370px;display:grid;place-items:center}.orb{width:min(340px,75vw);aspect-ratio:1;border-radius:50%;background:linear-gradient(140deg,#a78bfa55,#f472b644);border:1px solid #ffffff26;box-shadow:0 0 100px #a78bfa20;display:grid;place-items:center;position:relative}.orb:before{content:"";position:absolute;inset:17px;border:1px dashed #ffffff35;border-radius:50%}.initials{font-size:6.5rem;font-weight:900;letter-spacing:-8px;color:#fff;text-shadow:0 8px 50px #f472b666}.floating{position:absolute;background:#181827dd;border:1px solid var(--line);backdrop-filter:blur(12px);border-radius:15px;padding:12px 16px;font-size:.9rem;box-shadow:0 15px 45px #0004}.f1{top:18%;left:-1%}.f2{right:-2%;bottom:18%}.section{padding:75px 0;border-top:1px solid var(--line)}.section-head{max-width:720px;margin-bottom:30px}.kicker{color:var(--pink);font-size:.8rem;letter-spacing:2px;text-transform:uppercase;font-weight:800}.section h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-1.2px;line-height:1.15;margin:9px 0 14px}.muted{color:var(--muted)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.card{background:linear-gradient(145deg,#ffffff0a,#ffffff03);border:1px solid var(--line);border-radius:22px;padding:26px}.card h3{margin:0 0 12px;font-size:1.15rem}.quote{font-size:1.35rem;font-weight:750;line-height:1.5;color:#f2eaff}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}.stat{padding:18px;border:1px solid var(--line);border-radius:16px;background:#ffffff05}.stat strong{display:block;font-size:1.08rem}.stat span{font-size:.85rem;color:var(--muted)}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.feature{min-height:190px}.icon{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;background:linear-gradient(135deg,#a78bfa30,#f472b630);font-size:1.3rem;margin-bottom:18px}.feature p{color:var(--muted);margin-bottom:0}.placeholder{border:1px dashed #ffffff30;background:#ffffff04;border-radius:20px;padding:28px;text-align:center;color:var(--muted)}.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:20px}.contact-item{padding:14px 0;border-bottom:1px solid var(--line)}.contact-item:last-child{border-bottom:0}.contact-item small{display:block;color:var(--muted)}.contact-item strong{overflow-wrap:anywhere}.footer{padding:28px 0;color:var(--muted);font-size:.88rem;border-top:1px solid var(--line)}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.hidden{display:none!important}
+    @media(max-width:800px){.navlinks{gap:12px}.navlinks a{display:none}.hero{grid-template-columns:1fr;padding:45px 0 65px;gap:15px}.hero-copy{order:1}.portrait{order:0;min-height:290px}.orb{width:245px}.initials{font-size:5rem}.f1{left:4%;top:12%}.f2{right:2%;bottom:10%}.about-grid,.contact-grid{grid-template-columns:1fr}.grid3{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr 1fr}.section{padding:58px 0}}
+    @media(max-width:430px){.wrap{width:min(100% - 28px,1120px)}.nav{padding:17px 0}.brand{font-size:.94rem}.hero h1{letter-spacing:-2px}.stats{grid-template-columns:1fr}.card{padding:21px}}
+  </style>
+</head>
+<body>
+  <header class="wrap nav">
+    <a class="brand" href="#home">RAJU <span>KING</span> OFFICIAL</a>
+    <nav class="navlinks" aria-label="Main navigation">
+      <a href="#about" data-en="About" data-bn="পরিচিতি">About</a>
+      <a href="#work" data-en="What I Do" data-bn="আমার কাজ">What I Do</a>
+      <a href="#achievements" data-en="Achievements" data-bn="অর্জন">Achievements</a>
+      <a href="#contact" data-en="Contact" data-bn="যোগাযোগ">Contact</a>
+      <button class="lang" id="langBtn" type="button" aria-label="Switch language">বাংলা</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="wrap hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow" data-en="WELCOME TO MY WORLD" data-bn="আমার জগতে স্বাগতম">WELCOME TO MY WORLD</div>
+        <h1><span data-en="I'm" data-bn="আমি">I'm</span> <span class="gradient">Raju.</span><br><span data-en="I create stories." data-bn="গল্প তৈরি করি।">I create stories.</span></h1>
+        <div class="tagline">A Dreamer <span class="gradient">|</span> A Creator <span class="gradient">|</span> A King</div>
+        <p class="intro" data-en="Content Creator & Film Director from Thakurgaon, Bangladesh. I believe in dreaming boldly, learning every day, and building a unique identity through creativity and consistent effort." data-bn="আমি বাংলাদেশের ঠাকুরগাঁওয়ের একজন কনটেন্ট ক্রিয়েটর ও চলচ্চিত্র পরিচালক। বড় স্বপ্ন দেখা, প্রতিদিন নতুন কিছু শেখা এবং সৃজনশীলতা ও নিরলস চেষ্টার মাধ্যমে নিজের স্বতন্ত্র পরিচয় গড়ে তোলায় বিশ্বাস করি।">Content Creator & Film Director from Thakurgaon, Bangladesh. I believe in dreaming boldly, learning every day, and building a unique identity through creativity and consistent effort.</p>
+        <div class="actions">
+          <a class="btn primary" href="#about" data-en="Discover My Story ↗" data-bn="আমার গল্প জানুন ↗">Discover My Story ↗</a>
+          <a class="btn" href="#contact" data-en="Get in Touch" data-bn="যোগাযোগ করুন">Get in Touch</a>
+        </div>
+      </div>
+      <div class="portrait" aria-label="Profile placeholder">
+        <div class="orb"><div class="initials">RK</div></div>
+        <div class="floating f1">🎬 <span data-en="Creative Mind" data-bn="সৃজনশীল মন">Creative Mind</span></div>
+        <div class="floating f2">📍 Thakurgaon, BD</div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker" data-en="A LITTLE ABOUT ME" data-bn="আমার সম্পর্কে">A LITTLE ABOUT ME</div>
+          <h2 data-en="My story. My identity." data-bn="আমার গল্প। আমার পরিচয়।">My story. My identity.</h2>
+          <p class="muted" data-en="A personal space to share who I am, what I believe in, and where I hope to go." data-bn="আমি কে, কী বিশ্বাস করি এবং ভবিষ্যতে কোথায় পৌঁছাতে চাই—সেসব তুলে ধরার ব্যক্তিগত জায়গা।">A personal space to share who I am, what I believe in, and where I hope to go.</p>
+        </div>
+        <div class="about-grid">
+          <article class="card">
+            <h3 data-en="Who I Am" data-bn="আমি কে">Who I Am</h3>
+            <p data-en="I’m Raju — Raju King Official. I’m a dreamer who believes in creating my own path and moving forward through my own efforts. To me, life is more than simply getting by; it is about learning, improving myself, and working to turn dreams into reality." data-bn="আমি রাজু — Raju King Official। আমি একজন স্বপ্নবাজ মানুষ, যে নিজের পরিচয়ে পরিচিত হতে এবং নিজের চেষ্টায় জীবনে এগিয়ে যেতে বিশ্বাসী। আমার কাছে জীবন মানে শুধু বেঁচে থাকা নয়; প্রতিদিন নতুন কিছু শেখা, নিজেকে উন্নত করা এবং স্বপ্নগুলোকে বাস্তবে রূপ দেওয়ার চেষ্টা করা।">I’m Raju — Raju King Official. I’m a dreamer who believes in creating my own path and moving forward through my own efforts. To me, life is more than simply getting by; it is about learning, improving myself, and working to turn dreams into reality.</p>
+            <p data-en="I believe a person’s true identity is shaped not just by a name or status, but by their mindset, character, work, and achievements. I enjoy discovering new experiences and building something meaningful for the future." data-bn="আমি বিশ্বাস করি, মানুষের প্রকৃত পরিচয় শুধু তার নাম কিংবা অবস্থানে নয়, বরং তার চিন্তাভাবনা, ব্যক্তিত্ব, কাজ এবং অর্জনে। আমি নতুন অভিজ্ঞতা অর্জন করতে এবং ভবিষ্যতের জন্য সুন্দর কিছু গড়ে তুলতে ভালোবাসি।">I believe a person’s true identity is shaped not just by a name or status, but by their mindset, character, work, and achievements. I enjoy discovering new experiences and building something meaningful for the future.</p>
+          </article>
+          <article class="card">
+            <h3 data-en="My Vision" data-bn="আমার লক্ষ্য">My Vision</h3>
+            <p data-en="My goal is to build a distinct identity, use my skills creatively, and achieve things that one day become part of my story. This website is my digital home—a place to share my work, milestones, and ways to connect." data-bn="আমার লক্ষ্য হলো নিজের একটি স্বতন্ত্র পরিচয় তৈরি করা, সৃজনশীলভাবে নিজের দক্ষতা কাজে লাগানো এবং এমন কিছু অর্জন করা, যা একদিন আমার পরিচয়ের অংশ হয়ে থাকবে। এই ওয়েবসাইটটি আমার ডিজিটাল ঠিকানা—এখানে আমার কাজ, অর্জন ও যোগাযোগের তথ্য তুলে ধরব।">My goal is to build a distinct identity, use my skills creatively, and achieve things that one day become part of my story. This website is my digital home—a place to share my work, milestones, and ways to connect.</p>
+            <div class="quote" data-en="“Dreaming is the beginning. Working for that dream is what defines you.”" data-bn="“স্বপ্ন দেখা শুরু, আর সেই স্বপ্নের জন্য কাজ করে যাওয়াই আসল পরিচয়।”">“Dreaming is the beginning. Working for that dream is what defines you.”</div>
+            <div class="stats">
+              <div class="stat"><strong>Creator</strong><span data-en="Content & Ideas" data-bn="কনটেন্ট ও ভাবনা">Content & Ideas</span></div>
+              <div class="stat"><strong>Director</strong><span data-en="Visual Stories" data-bn="দৃশ্যের গল্প">Visual Stories</span></div>
+              <div class="stat"><strong>Thakurgaon</strong><span data-en="Bangladesh" data-bn="বাংলাদেশ">Bangladesh</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker" data-en="WHAT I DO" data-bn="আমার কাজ">WHAT I DO</div>
+          <h2 data-en="Creativity with a purpose." data-bn="উদ্দেশ্য নিয়ে সৃজনশীলতা।">Creativity with a purpose.</h2>
+          <p class="muted" data-en="The areas I want to grow, create, and share with the world." data-bn="যেসব ক্ষেত্রে আমি কাজ করতে, নতুন কিছু তৈরি করতে এবং সবার সঙ্গে ভাগ করে নিতে চাই।">The areas I want to grow, create, and share with the world.</p>
+        </div>
+        <div class="grid3">
+          <article class="card feature"><div class="icon">🎥</div><h3 data-en="Content Creation" data-bn="কনটেন্ট তৈরি">Content Creation</h3><p data-en="Creating engaging digital content and sharing ideas with an audience." data-bn="দর্শকদের জন্য আকর্ষণীয় ডিজিটাল কনটেন্ট তৈরি এবং নতুন ভাবনা তুলে ধরা।">Creating engaging digital content and sharing ideas with an audience.</p></article>
+          <article class="card feature"><div class="icon">🎬</div><h3 data-en="Film Direction" data-bn="চলচ্চিত্র পরিচালনা">Film Direction</h3><p data-en="Bringing stories to life through visual ideas, planning, and storytelling." data-bn="দৃশ্যের ভাবনা, পরিকল্পনা ও গল্প বলার মাধ্যমে গল্পকে জীবন্ত করে তোলা।">Bringing stories to life through visual ideas, planning, and storytelling.</p></article>
+          <article class="card feature"><div class="icon">✨</div><h3 data-en="Personal Growth" data-bn="নিজেকে গড়ে তোলা">Personal Growth</h3><p data-en="Learning new skills, building experience, and working toward long-term goals." data-bn="নতুন দক্ষতা শেখা, অভিজ্ঞতা অর্জন এবং দীর্ঘমেয়াদি লক্ষ্যের দিকে এগিয়ে যাওয়া।">Learning new skills, building experience, and working toward long-term goals.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="achievements">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker" data-en="MILESTONES" data-bn="অর্জন ও সাফল্য">MILESTONES</div>
+          <h2 data-en="Every step tells a story." data-bn="প্রতিটি পদক্ষেপই একটি গল্প।">Every step tells a story.</h2>
+          <p class="muted" data-en="This section will showcase verified achievements, projects, certificates, and memorable milestones as you share them." data-bn="তোমার দেওয়া তথ্য অনুযায়ী এখানে অর্জন, প্রজেক্ট, সার্টিফিকেট ও স্মরণীয় সাফল্য যোগ করা হবে।">This section will showcase verified achievements, projects, certificates, and memorable milestones as you share them.</p>
+        </div>
+        <div class="placeholder">🏆 <strong data-en="Your achievements will appear here" data-bn="তোমার অর্জন এখানে যুক্ত হবে">Your achievements will appear here</strong><br><span data-en="Share your projects, awards, certificates, or milestones to personalise this section." data-bn="এই অংশটি সাজাতে তোমার প্রজেক্ট, পুরস্কার, সার্টিফিকেট বা উল্লেখযোগ্য সাফল্যের তথ্য দাও।">Share your projects, awards, certificates, or milestones to personalise this section.</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker" data-en="LET'S CONNECT" data-bn="যোগাযোগ করি">LET'S CONNECT</div>
+          <h2 data-en="Have a project or idea?" data-bn="কোনো কাজ বা নতুন ভাবনা আছে?">Have a project or idea?</h2>
+          <p class="muted" data-en="I’m open to meaningful connections and creative opportunities. Add your preferred public contact details below when you're ready." data-bn="অর্থবহ যোগাযোগ ও সৃজনশীল কাজের সুযোগকে স্বাগত জানাই। প্রস্তুত হলে এখানে তোমার পছন্দের প্রকাশ্য যোগাযোগের তথ্য যোগ করা যাবে।">I’m open to meaningful connections and creative opportunities. Add your preferred public contact details below when you're ready.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="card">
+            <h3 data-en="Contact Details" data-bn="যোগাযোগের তথ্য">Contact Details</h3>
+            <div class="contact-item"><small data-en="Location" data-bn="অবস্থান">Location</small><strong>Thakurgaon, Bangladesh</strong></div>
+            <div class="contact-item"><small data-en="Email" data-bn="ইমেইল">Email</small><strong><a href="mailto:officialraju989@gmail.com">officialraju989@gmail.com</a></strong></div>
+            <div class="contact-item"><small data-en="YouTube" data-bn="ইউটিউব">YouTube</small><strong><a href="https://www.youtube.com/@rajusstory" target="_blank" rel="noopener noreferrer">@rajusstory ↗</a></strong></div>
+            <div class="contact-item"><small data-en="Facebook" data-bn="ফেসবুক">Facebook</small><strong><a href="https://www.facebook.com/share/1M8z7kn7RF/" target="_blank" rel="noopener noreferrer">Facebook Profile ↗</a></strong></div>
+            <div class="contact-item"><small data-en="WhatsApp" data-bn="হোয়াটসঅ্যাপ">WhatsApp</small><strong><a href="https://wa.me/message/WDDY6IUEWY2RL1" target="_blank" rel="noopener noreferrer">Chat on WhatsApp ↗</a></strong></div>
+          </div>
+          <div class="card">
+            <h3 data-en="A Note from Raju" data-bn="রাজুর পক্ষ থেকে">A Note from Raju</h3>
+            <p class="muted" data-en="Thank you for visiting my little corner of the internet. Your time and support mean a lot. Stay connected as I continue learning, creating, and chasing meaningful dreams." data-bn="আমার এই ছোট্ট ডিজিটাল জগতে আসার জন্য ধন্যবাদ। তোমাদের সময় ও সমর্থন আমার কাছে অনেক মূল্যবান। শিখতে, তৈরি করতে এবং অর্থবহ স্বপ্নের পেছনে এগিয়ে যেতে আমার সঙ্গে যুক্ত থেকো।">Thank you for visiting my little corner of the internet. Your time and support mean a lot. Stay connected as I continue learning, creating, and chasing meaningful dreams.</p>
+            <div class="quote">“Welcome to my world — Raju King Official.”</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="wrap footer-inner"><span>© <span id="year"></span> Raju King Official. <span data-en="All rights reserved." data-bn="সর্বস্বত্ব সংরক্ষিত।">All rights reserved.</span></span><span data-en="Made with purpose & creativity." data-bn="উদ্দেশ্য ও সৃজনশীলতায় তৈরি।">Made with purpose & creativity.</span></div></footer>
+  <script>
+    let language = 'en';
+    const langBtn = document.getElementById('langBtn');
+    function setLanguage(next) {
+      language = next;
+      document.documentElement.lang = next;
+      document.querySelectorAll('[data-en][data-bn]').forEach(el => { el.textContent = el.dataset[next]; });
+      langBtn.textContent = next === 'en' ? 'বাংলা' : 'English';
+    }
+    langBtn.addEventListener('click', () => setLanguage(language === 'en' ? 'bn' : 'en'));
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
